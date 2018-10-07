@@ -1,3 +1,4 @@
+
 :root {
   --offset: 20px;
   --max_width: 1450px;
@@ -35,4 +36,5 @@ html::before {
   z-index: 1000;
   pointer-events: none;
 }
+
 
