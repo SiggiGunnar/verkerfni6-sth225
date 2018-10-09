@@ -70,17 +70,11 @@ grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
 
   background: #eee;
 }
   
-/* TODO útfæra grid fyrir cards */
-  
-  
-  /*
-    .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
-    að það fær `height: 100%;`
-  */
 .card {
   display: flex;
   flex-direction: column;
@@ -157,9 +151,12 @@ grid {
     margin-left: -10px;
     margin-right: -10px;
   }
-  
+  .grid__cards {
+    width: 100%;
+  }
+
   .card {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     width: 50%;
     max-width: 470px;
@@ -185,12 +182,14 @@ grid {
 }
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
 @media (min-width: 1000px) {
-  .grid__col {
-    width: 100%;
-  } 
-  .card {
-    width: 33.3333%;
+  .grid {
+    margin-bottom: 40px;
   }
+
+  .grid__col {
+    width: 50%;
+  }
+  
 }
 
 /* TODO .card stílar úr v5 (eða sýnilausn...) */
